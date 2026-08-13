@@ -5,8 +5,10 @@ class Baratheon(Character):
     "Representing Baratheon"
     def __init__(self, first_name, is_alive=True):
         """Constructor for Baratheon"""
-        super().__init__(first_name, is_alive=is_alive,
-                         family_name="Baratheon", eyes="brown", hairs="dark")
+        super().__init__(first_name, is_alive=is_alive)
+        self.family_name = "Baratheon"
+        self.eyes = "brown"
+        self.hairs = "dark"
 
     def __repr__(self):
         """String representation of Baratheon"""
@@ -26,8 +28,10 @@ class Lannister(Character):
     """Representing Lannister"""
     def __init__(self, first_name, is_alive=True):
         """Constructor for Lannister"""
-        super().__init__(first_name, is_alive=is_alive,
-                         family_name="Lannister", eyes="green", hairs="light")
+        super().__init__(first_name, is_alive=is_alive)
+        self.family_name = "Lannister"
+        self.eyes = "green"
+        self.hairs = "light"
 
     def __repr__(self):
         """String representation of Lannister"""

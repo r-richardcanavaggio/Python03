@@ -3,14 +3,14 @@ from abc import ABC, abstractmethod
 
 class Character(ABC):
     """Abstract class representing a character"""
-    def __init__(self, first_name, is_alive=True,
-                 family_name="", eyes="", hairs=""):
+    family_name = str
+    eyes = str
+    hair = str
+
+    def __init__(self, first_name, is_alive=True):
         """Constructor for Character"""
         self.first_name = first_name
         self.is_alive = is_alive
-        self.family_name = family_name
-        self.eyes = eyes
-        self.hairs = hairs
 
     @abstractmethod
     def die(self):
